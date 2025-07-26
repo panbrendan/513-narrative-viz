@@ -1,0 +1,106 @@
+/* Base layout */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+
+#viz {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Annotation styling */
+.annotation-group .annotation-connector,
+.annotation-group .annotation-note {
+  stroke: #333;
+  fill: #fff;
+  font-size: 0.9rem;
+}
+
+/* Controls panel (scene 5) */
+.controls {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.75em;
+  border-radius: 0.5em;
+  font-size: 0.9rem;
+}
+
+.controls select,
+.controls label {
+  margin-right: 1em;
+}
+
+/* Chart SVG responsiveness */
+.chart-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Axes labels */
+.axis-label {
+  font-weight: bold;
+  fill: #333;
+}
+
+/* Legend text */
+.legend text {
+  font-size: 0.85rem;
+  alignment-baseline: hanging;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.nav-buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-buttons button {
+  margin: 0 8px;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.scene-title {
+  font-size: 1.5rem;
+  margin: 20px 0 8px 0;
+  text-align: center;
+}
+
+.scene-desc {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 20px 20px 20px;
+}
+
+.intro-title {
+  font-size: 2rem;
+  margin: 40vh 0 10px 0;
+  text-align: center;
+}
+
+.start-button {
+  display: block;
+  margin: 0 auto 40px auto;
+  padding: 0.75em 1.5em;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
