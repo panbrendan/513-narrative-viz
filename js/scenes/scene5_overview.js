@@ -11,10 +11,10 @@ export function renderScene5() {
   container.selectAll('*').remove();
   container.append('h2')
     .attr('class', 'scene-title')
-    .text('Overview: All Buzz-Word Mentions');
+    .text('Overview: All Buzzword Mentions');
   container.append('p')
     .attr('class', 'scene-desc')
-    .text('Select a date range and company to zoom in—and see every mention.');
+    .text('Select a date range and company to zoom in');
 
   const controls = container.append('div').attr('class', 'controls');
   controls.append('label').text('From: ');
