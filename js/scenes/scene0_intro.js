@@ -4,7 +4,7 @@ export function renderScene0() {
 
   viz.append('h1')
     .attr('class', 'intro-title')
-    .text('How have certain buzzwords affected the share price of top tech companies?');
+    .text('How have certain buzzwords affected the share price of top tech companies when initially mentioned or demoed?');
 
   viz.append('button')
     .attr('class', 'start-button')

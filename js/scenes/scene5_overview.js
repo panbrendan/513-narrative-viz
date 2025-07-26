@@ -11,7 +11,7 @@ export function renderScene5() {
   container.selectAll('*').remove();
   container.append('h2')
     .attr('class', 'scene-title')
-    .text('Overview: All Buzzword Mentions');
+    .text('Explore: Share Price and Buzzwords');
   container.append('p')
     .attr('class', 'scene-desc')
     .text('Select a date range and company to zoom in');
@@ -212,7 +212,7 @@ export function renderScene5() {
 
     const nav = container.append('div').attr('class', 'nav-buttons');
     nav.append('button')
-      .text('← Back')
+      .text('Back')
       .on('click', () => window.prevScene());
   }
 
